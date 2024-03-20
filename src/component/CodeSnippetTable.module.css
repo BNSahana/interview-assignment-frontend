@@ -1,0 +1,27 @@
+.snippetContainer {
+  margin-top: 20px;
+}
+
+.snippet-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.snippet-table th,
+.snippet-table td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.snippet-table th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.snippet-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.snippet-table tbody tr:hover {
+  background-color: #ddd;
+}
