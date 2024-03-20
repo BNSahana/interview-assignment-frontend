@@ -9,7 +9,7 @@ function CodeSnippetTable() {
 
   useEffect(() => {
     axios
-      .get(`${backendUrl}/app/entries`)
+      .get(`${backendUrl}app/entries`)
       .then((response) => {
         setCodeSnippets(response.data);
         setLoading(false);

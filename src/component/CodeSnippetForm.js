@@ -21,7 +21,7 @@ function CodeSnippetForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post(`${backendUrl}/app/submit`, {
+      .post(`${backendUrl}app/submit`, {
         username: formData.username,
         language: formData.language,
         stdin: formData.stdin,
