@@ -1,9 +1,11 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import styles from "./CodeSnippetForm.module.css";
 
 const backendUrl = process.env.REACT_APP_BACKEND_URL;
 function CodeSnippetForm() {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     username: "",
     language: "",
@@ -36,6 +38,7 @@ function CodeSnippetForm() {
           stdin: "",
           sourceCode: "",
         });
+        navigate("/entries");
       })
       .catch((error) => {
         console.error("Error submitting code snippet:", error);
